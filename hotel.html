@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <header>
+    <h1>🏨 Hotel Management System</h1>
+    <p>Book your rooms easily!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#">Booking</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Room Booking Form</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="room">Select Room Type:</label>
+        <select id="room" required>
+          <option value="100">Standard - $100/night</option>
+          <option value="200">Deluxe - $200/night</option>
+          <option value="300">Luxury - $300/night</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="days">Number of Days:</label>
+        <input type="number" id="days" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" min="1" required>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="hotel.js"></script>
+</body>
+</html>
